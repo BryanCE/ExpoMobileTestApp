@@ -9,9 +9,11 @@ const TabIcon = ({icon, color, name, focused}) => {
 		<View>
 			<Image
 			source={icon} 
-			>
-				Icon
-			</Image>
+			resizeMode="contain"
+			tintColor={color}
+			className="w-6 h-6"
+			/>
+			<Text style={{color: color, fontSize: 12}}>{name}</Text>
 		</View>
 	)
 }
@@ -25,7 +27,7 @@ const TabsLayout = () => {
 				title: 'Home',
 				headerShown: false,
 				tabBarIcon: ({color, focused}) => (
-					<TabIcon icon={icons.BlackBronzeAgeBoatLogo} color={color} name="Home" size={24} focused={focused} />
+					<TabIcon icon={icons.BlackBronzeAgeBoat} color={color} name="Home" size={24} focused={focused} />
 				)
 			}}/>
 		</Tabs>
