@@ -12,10 +12,10 @@ export default function App() {
       <StyledText className="text-white">Hello, NativeWind!</StyledText>
       <StatusBar style="auto" />
       <Link 
-      href="/profile"
+      href="/home"
       style={{color: 'blue', marginTop: 20}}
       >
-        Example
+        Go to Home
       </Link>
     </View>
   );
