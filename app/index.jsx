@@ -8,7 +8,7 @@ const StyledText = styled(Text);
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-red" >
-      <Text className="text-3xl" >Bryan's First Mobile</Text>
+      <Text className="text-3xl font-pblack " >Bryan's First Mobile</Text>
       <StyledText className="text-white">Hello, NativeWind!</StyledText>
       <StatusBar style="auto" />
       <Link 
