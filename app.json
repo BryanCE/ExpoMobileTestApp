@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "React_Native_Example",
-    "slug": "React_Native_Example",
+    "name": "Bryan's Mobile App",
+    "scheme": "FirstReactNativeApp",
+    "slug": "bryans_mobile_app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/BlackBronzeAgeBoatLogo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/AnimalSpiral.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +20,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/BlackBronzeAgeBoatLogo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/BlackBronzeAgeBoatLogo.png"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
