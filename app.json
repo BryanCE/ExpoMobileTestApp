@@ -5,10 +5,10 @@
     "slug": "bryans_mobile_app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/BlackBronzeAgeBoatLogo.png",
+    "icon": "./assets/icons/bronzeboat.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/AnimalSpiral.png",
+      "image": "./assets/icons/animalspiral.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,12 +20,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/BlackBronzeAgeBoatLogo.png",
+        "foregroundImage": "./assets/icons/bronzeboat.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/BlackBronzeAgeBoatLogo.png"
+      "favicon": "./assets/icons/bronzeboat.png"
     },
     "plugins": [
       "expo-router"
