@@ -1,8 +1,8 @@
 //holds all the Tabs for the app
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import {Tabs, Redirect} from 'expo-router';
-import { icons } from '../../constants';
+import { icons } from "../../constants";
 
 const TabIcon = ({icon, color, name, focused}) => {
 	return (
@@ -23,13 +23,14 @@ const TabsLayout = () => {
 	<>
 		<Tabs>
 			<Tabs.Screen name="home" 
-			options={{
-				title: 'Home',
+			options= {{
+				title: "Home",
 				headerShown: false,
 				tabBarIcon: ({color, focused}) => (
-					<TabIcon icon={icons.home} color={color} name="Home" size={24} focused={focused} />
+					<TabIcon icon={icons.animalspiral} color={color} name="" focused={focused} />
 				)
-			}}/>
+			}}
+			/>
 		</Tabs>
 	</>
   )
