@@ -27,7 +27,7 @@ const TabsLayout = () => {
 				title: 'Home',
 				headerShown: false,
 				tabBarIcon: ({color, focused}) => (
-					<TabIcon icon={icons.BlackBronzeAgeBoat} color={color} name="Home" size={24} focused={focused} />
+					<TabIcon icon={icons.home} color={color} name="Home" size={24} focused={focused} />
 				)
 			}}/>
 		</Tabs>

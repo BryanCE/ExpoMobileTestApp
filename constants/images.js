@@ -5,5 +5,6 @@ import path from "../assets/images/path.png";
 import logo from "../assets/images/logo.png";
 import logoSmall from "../assets/images/logo-small.png";
 import empty from "../assets/images/empty.png";
-
-export default { profile, thumbnail, cards, path, logo, logoSmall, empty };
+import animalspiral from "../assets/images/animalspiral.png";
+import bronzeboat from "../assets/images/bronzeboat.png";
+export default { profile, thumbnail, cards, path, logo, logoSmall, empty, animalspiral, bronzeboat};

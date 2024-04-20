@@ -11,8 +11,8 @@ import logout from "../assets/icons/logout.png";
 import eyeHide from "../assets/icons/eye-hide.png";
 import eye from "../assets/icons/eye.png";
 import play from "../assets/icons/play.png";
-import BlackBronzeAgeBoat from "../assets/icons/BlackBronzeAgeBoat.png";
-import AnimalSpiral from "../assets/icons/AnimalSpiral.png";
+import bronzeboat from "../assets/icons/bronzeboat.png";
+import animalspiral from "../assets/icons/animalspiral.png";
 
 export default {
   play,
@@ -28,6 +28,6 @@ export default {
   logout,
   eyeHide,
   eye,
-  BlackBronzeAgeBoat,
-  AnimalSpiral,
+  bronzeboat,
+  animalspiral,
 };
