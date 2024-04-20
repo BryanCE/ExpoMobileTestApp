@@ -10,7 +10,7 @@ export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-white" >
       <Text className="text-3xl font-pblack " >Bryan's First Mobile</Text>
-      <StyledText className="text-white">Hello, NativeWind!</StyledText>
+      <Text className="text-3xl font-pblack " >App</Text>
       <StatusBar style="auto" />
       <Link 
       href="/home"
