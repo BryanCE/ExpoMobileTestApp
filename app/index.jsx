@@ -33,7 +33,7 @@ export default function App() {
           </View>
           <View className="justify-center align-center gap-4 w-full ">
             <CustomButton
-              title={"Sign Up"}
+              title={"Login"}
               handlePress={() => router.push("/sign-in")}
               containerStyles="w-full mt-7"
             />

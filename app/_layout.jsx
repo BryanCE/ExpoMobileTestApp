@@ -36,6 +36,18 @@ const RootLayout = () => {
         name="index" // This is the file/component name
         options={{ title: "Home", headerShown: false }} // Set the display name to "Home"
       />
+      <Stack.Screen
+        name="(auth)"
+        options={{ title: "Auth", headerShown: false }}
+      />
+      <Stack.Screen
+        name="(tabs)"
+        options={{ title: "Tabs", headerShown: false }}
+      />
+      <Stack.Screen
+        name="/search/[query]"
+        options={{ title: "Search", headerShown: false }}
+      />
     </Stack>
   );
 };
