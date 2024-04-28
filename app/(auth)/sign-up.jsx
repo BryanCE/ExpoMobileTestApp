@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, Alert } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../../constants";
@@ -13,8 +13,22 @@ const SignUp = () => {
     password: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const submit = () => {
-    createUser();
+  const submit = async () => {
+    if (!form.username || !form.email || !form.password) {
+      Alert.alert("Error", "Please fill in all fields");
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const result = await createUser(form.email, form.password, form.username);
+      // Set user in global state context
+
+      router.replace("/home");
+    } catch (error) {
+      Alert.alert("Error", "Failed to create user", error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return (
     <SafeAreaView className="bg-primary h-full">
@@ -43,7 +57,7 @@ const SignUp = () => {
             otherStyles="mt-10 w-[300px]"
           />
           <CustomButton
-            title="Sign In"
+            title="Sign Up"
             handlePress={submit}
             containerStyles={"mt-10 w-[300px]"}
             isLoading={isSubmitting}
@@ -56,7 +70,7 @@ const SignUp = () => {
               href="/sign-in"
               className="text-lg text-secondary font-pmedium"
             >
-              Sign Up
+              Sign In
             </Link>
           </View>
         </View>
